@@ -1,9 +1,27 @@
+import { BrowserRouter } from "react-router-dom";
+import Hero from './components/hero';
 
 
-export default function App() {
+const App = () => {
   return (
-    <h1 className="text-3xl bg-red-500 text-white font-bold m-2 text-center p-3">
-      Hello world!
-    </h1>
-  )
-}
+    <BrowserRouter>
+      {/* <div className='relative z-0 bg-primary'>
+        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'> */}
+          {/* <Navbar /> */}
+          <Hero />
+        {/* </div> */}
+        {/* <About />
+        <Experience />
+        <Tech />
+        <Works />
+        <Feedbacks /> */}
+        {/* <div className='relative z-0'> */}
+          {/* <Contact />
+          <StarsCanvas /> */}
+        {/* </div>
+      </div> */}
+    </BrowserRouter>
+  );
+};
+
+export default App;
